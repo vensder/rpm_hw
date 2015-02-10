@@ -27,14 +27,14 @@ Hello World app
 # We actually just put all our install files into a directory structure that mimics a server directory structure here
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d -m 755 $RPM_BUILD_ROOT/usr/bin/
-cp ../SOURCES/helloworld.sh $RPM_BUILD_ROOT/usr/bin/.
+install -d -m 755 $RPM_BUILD_ROOT/usr/local/bin/
+cp ../SOURCES/helloworld.sh $RPM_BUILD_ROOT/usr/local/bin/.
 
 # Contains a list of the files that are part of the package
 # See useful directives such as attr here: http://www.rpm.org/max-rpm-snapshot/s1-rpm-specref-files-list-directives.html
 %files
-%attr(755, root, -) /usr/bin/helloworld.sh
-/usr/bin/helloworld.sh
+%attr(755, root, -) /usr/local/bin/helloworld.sh
+/usr/local/bin/helloworld.sh
 
 # Used to store any changes between versions
 %changelog
