@@ -1,8 +1,7 @@
 Name            : helloworld
 Summary         : Hello world application
 Version         : 0.0.2
-#Release         : 0.1
-Release : %{?BUILD_NUMBER}
+Release 	: %{?BUILD_NUMBER}
 
 Group		: Applications/File
 License		: marklar v marklar
